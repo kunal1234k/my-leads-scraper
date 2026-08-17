@@ -1,0 +1,15 @@
+# Generated scraper data
+test-results.csv
+queries.txt
+data/
+webdata/
+
+# Environment secrets
+.env
+
+# Local binaries
+google-maps-scraper/google-maps-scraper
+
+# OS / editor files
+.DS_Store
+.vscode/

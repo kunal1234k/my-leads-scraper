@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lead Generator</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>LEAD GENERATOR</h1>
+    <form id="scrapeForm">
+      <label>Niche:<br/><input name="niche" value="dentists"/></label>
+      <label>Location:<br/><input name="location" value="Panipat, Haryana"/></label>
+      <label>What are you trying to sell?:<br/><input name="serviceDescription" placeholder="Example: Website development, AI automation, AI chatbot, AI voice agent, WhatsApp automation, SEO, etc."/></label>
+      <label>Number of leads:<br/><input name="limit" type="number" value="20"/></label>
+      <label>Depth:<br/><input name="depth" type="number" value="2"/></label>
+      <label>Concurrency:<br/><input name="concurrency" type="number" value="1"/></label>
+      <label><input name="extractEmail" type="checkbox"/> Extract Email</label>
+      <br/>
+      <button type="submit">START SCRAPING</button>
+    </form>
+
+    <div id="jobStatus" style="display:none;">
+      <h2>JOB STATUS</h2>
+      <pre id="statusText">No job</pre>
+      <div id="leads"></div>
+    </div>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
